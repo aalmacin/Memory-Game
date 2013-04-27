@@ -1,0 +1,116 @@
+<!--
+	Name : Aldrin Jerome Almacin
+	Date : October 13, 2012 
+	Description : The main xml layout of the application of the application. 
+	Consists of the root/main LinearLayout that holds all the Views in the game,
+	a messageTextView showing the user a message about card interactions, 
+	scoreLinearLayout that shows the current score to the user,
+	timeLinearLayout that shows the time remaining in the game,
+	and cardsLinearLayout that holds the LinearLayouts which holds all the other cards.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="2dp"
+        android:text="@string/pick_a_card"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/message_size" />
+
+    <LinearLayout
+        android:id="@+id/scoreLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/scoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="1dp"
+            android:text="@string/score_text"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/standard_size" />
+
+        <TextView
+            android:id="@+id/scoreValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/score"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/standard_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/timeLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/timeLeftTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="1dp"
+            android:text="@string/time"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/standard_size" />
+
+        <TextView
+            android:id="@+id/timeLeftValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/timer"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/standard_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cardsLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
